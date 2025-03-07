@@ -1,6 +1,6 @@
-       /* Base Styles */
-       :root {
-        --neon-blue: #00f3ff;
+ /* Base Styles */
+:root {
+        --neon-blue: #233dff;
         --neon-purple: #9d00ff;
         --dark-bg: #0a0a0a;
         --dark-card: #111111;
@@ -8,34 +8,33 @@
         --transition: all 0.3s ease-in-out;
     }
 
-    * {
+* {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Space Grotesk', 'Montserrat', sans-serif;
     }
 
-    body {
+body {
         background-color: var(--dark-bg);
         color: var(--text-color);
         overflow-x: hidden;
     }
 
-    section {
+section {
         padding: 6rem 0;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
-    .container {
+.container {
         width: 85%;
         max-width: 1200px;
         margin: 0 auto;
     }
 
-    .btn {
+.btn {
         background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
         color: white;
         border: none;
@@ -52,12 +51,12 @@
         z-index: 1;
     }
 
-    .btn:hover {
+.btn:hover {
         transform: translateY(-3px);
         box-shadow: 0 0 15px rgba(157, 0, 255, 0.5);
     }
 
-    .btn::before {
+.btn::before {
         content: '';
         position: absolute;
         top: 0;
@@ -71,17 +70,17 @@
         transform-origin: right;
     }
 
-    .btn:hover::before {
+.btn:hover::before {
         transform: scaleX(1);
         transform-origin: left;
     }
 
-    h1, h2, h3 {
+h1, h2, h3 {
         font-weight: 700;
         margin-bottom: 1rem;
     }
 
-    h1 {
+h1 {
         font-size: 3.5rem;
         background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
         -webkit-background-clip: text;
@@ -89,13 +88,13 @@
         line-height: 1.2;
     }
 
-    h2 {
+h2 {
         font-size: 2.5rem;
         position: relative;
         margin-bottom: 2rem;
     }
 
-    h2::after {
+h2::after {
         content: '';
         position: absolute;
         left: 0;
@@ -105,14 +104,14 @@
         background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
     }
 
-    p {
+p {
         line-height: 1.6;
         margin-bottom: 1.5rem;
         font-size: 1.1rem;
     }
 
     /* Navigation */
-    nav {
+nav {
         position: fixed;
         top: 0;
         left: 0;
@@ -124,12 +123,12 @@
         background-color: rgba(10, 10, 10, 0.8);
     }
 
-    nav.scrolled {
+nav.scrolled {
         padding: 1rem 0;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .nav-container {
+.nav-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -138,7 +137,7 @@
         margin: 0 auto;
     }
 
-    .logo {
+.logo {
         font-size: 1.8rem;
         font-weight: 700;
         background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
